@@ -7,7 +7,7 @@ let sessions = {};
 const registerSocketServer = (server) => {
   const io = new Server(server, {
     cors: {
-      origin: "*",
+      origin: "https://chapgpt.netlify.app",
       methods: ["GET", "POST"],
     },
   });
